@@ -1,13 +1,13 @@
-*{
+/* *{
     margin: 0px;
     padding: 0px;
 }
 body {
  background-color: #113c5a;
     display: flex;
-    align-items: center;      /* vertically center */
-    justify-content: center;  /* horizontally center */
-    min-height: 100vh;        /* ensure full viewport height */
+    align-items: center;      
+    justify-content: center;  
+    min-height: 100vh;        
     color: white;
 
 }
@@ -19,11 +19,7 @@ body {
 
     border-radius: 5px;
     padding: 30px;
-    /* display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
- */
+   
 
 }
 input{
@@ -109,4 +105,152 @@ width: 30px;
 }
 .wind{
     margin-top: 10px;
+}  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(to right top, #0f2027, #203a43, #2c5364);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 20px;
+}
+
+/* Weather app main layout */
+.wetherapplayout {
+    width: 100%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+/* Search bar */
+.searchbar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.input {
+    flex: 1;
+    padding: 12px 20px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    margin-right: 10px;
+    transition: 0.3s ease;
+}
+
+.input::placeholder {
+    color: #ccc;
+}
+
+.search {
+    padding: 12px 18px;
+    border: none;
+    background-color: #00c6ff;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.search:hover {
+    background-color: #0072ff;
+}
+
+/* Weather info */
+.wether img {
+    height: 100px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.wether img:hover {
+    transform: scale(1.1);
+}
+
+.temp {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.city {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Information section */
+.imformation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.humidity,
+.windspeed {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.humidity img,
+.windspeed img {
+    width: 40px;
+}
+
+.air,
+.wind {
+    text-align: left;
+}
+
+.degree,
+.speed {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Responsive design */
+@media (max-width: 500px) {
+    .wetherapplayout {
+        padding: 20px;
+    }
+
+    .temp {
+        font-size: 40px;
+    }
+
+    .city {
+        font-size: 22px;
+    }
+
+    .input {
+        font-size: 14px;
+    }
+
+    .search {
+        padding: 10px 14px;
+    }
+
+    .humidity img,
+    .windspeed img {
+        width: 30px;
+    }
 }
