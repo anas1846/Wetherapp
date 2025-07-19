@@ -1,0 +1,112 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+ background-color: #113c5a;
+    display: flex;
+    align-items: center;      /* vertically center */
+    justify-content: center;  /* horizontally center */
+    min-height: 100vh;        /* ensure full viewport height */
+    color: white;
+
+}
+
+.wetherapplayout{
+    width: 50vh;
+    height: 60vh;
+  background: linear-gradient(to bottom, #00c6ff, #0072ff);
+
+    border-radius: 5px;
+    padding: 30px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+ */
+
+}
+input{
+    padding: 15px;
+    width: 75%;
+margin-right: 10px;
+border-radius: 20px;
+border: none;
+outline: none;
+
+}
+button{
+    padding:15px ;
+    border-radius: 100px;
+    border: none;
+    background-color: white;
+    
+    
+    
+}
+.searchbar{
+    margin: 15px 0px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+
+    
+}
+.wether {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   margin-bottom: 20px;
+}
+.wether img{
+    height: 150px;
+}
+.temp{
+    font-size: 70px;
+}
+.city{
+    font-size: 40px;
+}
+.humidity img{
+width: 30px;
+}
+.degree{
+    font-size: 20px;
+}
+.humidity{
+    display:flex ;
+    justify-content:center ;
+    align-items: center;
+    flex-direction:row ;
+    gap: 10px;
+
+}
+.air{
+    margin-top: 10px;
+}
+.windspeed img{
+    width: 30px;
+}
+.windspeed{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    flex-direction: row;
+    gap:10px ;
+}
+.imformation{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly ;
+    flex-direction: row;
+    gap: 40px;
+    margin-top: 40px;
+ 
+    
+}
+.wind{
+    margin-top: 10px;
+}
